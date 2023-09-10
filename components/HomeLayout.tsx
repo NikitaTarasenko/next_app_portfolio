@@ -8,7 +8,7 @@ type HomeLayoutProps = {
 const HomeLayout = ({ children, className = '' }: HomeLayoutProps) => {
     return (
         <div
-            className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}
+            className={`w-full h-[calc(100vh-122px)] inline-block z-0 relative bg-light p-32 ${className}`}
         >
             {children}
         </div>

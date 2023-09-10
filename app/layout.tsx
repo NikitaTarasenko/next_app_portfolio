@@ -18,7 +18,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${montserrat.variable} font-mont bg-light w-full min-h-screen z-10`}
+                className={`${montserrat.variable} font-mont bg-light w-full  z-10`}
             >
                 <NavBar />
                 {children}
