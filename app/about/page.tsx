@@ -1,6 +1,6 @@
 'use client';
 import Animatedtext from '@/components/Animatedtext';
-import HomeLayout from '@/components/HomeLayout';
+
 import Head from 'next/head';
 import Image from 'next/image';
 import Me from '../../public/images/Me.jpg';
@@ -9,6 +9,7 @@ import { useInView, useMotionValue, useSpring } from 'framer-motion';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Education from '@/components/Education';
+import Layout from '@/components/Layout';
 
 type AnimationType = {
     value: number;
@@ -47,7 +48,7 @@ const about = () => {
                 />
             </Head>
             <main className="flex w-full flex-col items-center justify-center bg-light">
-                <div className="pt-12 w-full   inline-block z-0 relative bg-light p-32">
+                <Layout>
                     <Animatedtext
                         text="Passion Fuels Purpose!"
                         className="mb-16"
@@ -129,7 +130,7 @@ const about = () => {
                     <Skills />
                     <Experience />
                     <Education />
-                </div>
+                </Layout>
             </main>
         </>
     );

@@ -15,7 +15,7 @@ const SocialLinks = () => {
                 <GithubIcon />
             </motion.a>
             <motion.a
-                href="https://www.linkedin.com/in/mykyta-tarasenko-9763b1177/"
+                href="https://www.linkedin.com/in/nikita-tarasenko-9763b1177/"
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
