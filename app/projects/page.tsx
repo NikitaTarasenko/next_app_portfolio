@@ -162,16 +162,6 @@ const page = () => {
                                 githubLink="https://github.com/NikitaTarasenko/production-project/blob/main/README.md"
                             />
                         </div>
-
-                        <div className="col-span-6">
-                            <Project
-                                title="Unicorn Events"
-                                img={pr4}
-                                link="https://unicorn.events/"
-                                type="Company website"
-                                githubLink="https://github.com/NikitaTarasenko/NikitaTarasenko.github.io/tree/master/SN"
-                            />
-                        </div>
                         <div className="col-span-6">
                             <Project
                                 title="Startup.Inc"
@@ -179,18 +169,6 @@ const page = () => {
                                 link="https://startup.inc/en/"
                                 type="Company website"
                                 githubLink="https://github.com/NikitaTarasenko"
-                            />
-                        </div>
-                        <div className="col-span-12">
-                            <FeaturedProject
-                                title="Silicon Valley Club"
-                                img={svc}
-                                link2="https://spr.sv.club/"
-                                sumary="One of the last projects in the company, which was handled only by me. Created with React.js. Animations are designed and developed by me and created using GSAP library.
-                                 In the final version of site some animations were removed at the designer's request : "
-                                link="https://svc-1a5172.netlify.app/"
-                                type="Company website"
-                                githubLink="https://github.com/NikitaTarasenko/svc"
                             />
                         </div>
                         <div className="col-span-6">
@@ -203,6 +181,28 @@ const page = () => {
                             />
                         </div>
 
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                title="Silicon Valley Club"
+                                img={svc}
+                                link2="https://spr.sv.club/"
+                                sumary="One of the latest projects in the company, which was handled only by me. Created with React.js. Animations are designed and developed by me and created using GSAP library.
+                                 In the final version of site some animations were removed at the designer's request : "
+                                link="https://svc-1a5172.netlify.app/"
+                                type="Company website"
+                                githubLink="https://github.com/NikitaTarasenko/svc"
+                            />
+                        </div>
+
+                        <div className="col-span-6">
+                            <Project
+                                title="Unicorn Events"
+                                img={pr4}
+                                link="https://unicorn.events/"
+                                type="Company website"
+                                githubLink="https://github.com/NikitaTarasenko/NikitaTarasenko.github.io/tree/master/SN"
+                            />
+                        </div>
                         <div className="col-span-6">
                             <Project
                                 title="Oko production"
