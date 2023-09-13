@@ -1,8 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
-import { GithubIcon, LinkedInIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 const SocialLinks = () => {
+    const [mode, setMode] = useThemeSwitcher();
+
     return (
         <nav className="flex items-center justify-center flex-wrap gap-1">
             <motion.a
@@ -23,6 +26,22 @@ const SocialLinks = () => {
             >
                 <LinkedInIcon />
             </motion.a>
+
+            <button
+                onClick={() => setMode(mode === 'dark' ? 'light' : 'dark')}
+                className={`flex items-center justify-center rounded-full p-1 
+                ${
+                    mode === 'light'
+                        ? 'bg-dark text-light'
+                        : 'bg-light text-dark'
+                }`}
+            >
+                {mode === 'dark' ? (
+                    <SunIcon className="fill-dark" />
+                ) : (
+                    <MoonIcon className="fill-dark" />
+                )}
+            </button>
         </nav>
     );
 };

@@ -18,7 +18,7 @@ const CustomLink = ({ href, title, classname = '' }: CustomLinkProps) => {
             <span
                 className={`h-[1.5px] inline-block  bg-dark absolute left-0
                  bottom-0 group-hover:w-full
-                 transition-[width] ease duration-300 ${currentLink}`}
+                 transition-[width] ease duration-300 ${currentLink} dark:bg-light`}
             >
                 {'\u00A0'}
             </span>

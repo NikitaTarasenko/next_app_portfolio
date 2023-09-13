@@ -28,7 +28,7 @@ const Details = ({
             ref={ref}
             className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
         >
-            <figure className="absolute left-0 stroke-dark">
+            <figure className="absolute left-0 stroke-dark  dark:stroke-light">
                 <svg
                     className="-rotate-90"
                     width="75"
@@ -40,7 +40,7 @@ const Details = ({
                         cy="50"
                         r="20"
                         pathLength="1"
-                        className="stroke-primary stroke-1 fill-none"
+                        className="stroke-primary  dark:stroke-primaryDark stroke-1 fill-none"
                     />
                     <motion.circle
                         initial={{ pathLength: 0 }}
@@ -48,7 +48,7 @@ const Details = ({
                         cy="50"
                         r="20"
                         pathLength="1"
-                        className="stroke-[5px] fill-light"
+                        className="stroke-[5px] fill-light  dark:fill-dark"
                         style={{ pathLength: scrollYProgress }}
                     />
                     <circle
@@ -56,7 +56,7 @@ const Details = ({
                         cy="50"
                         r="10"
                         pathLength="1"
-                        className="animate-pulse  stroke-1 fill-primary"
+                        className="animate-pulse  stroke-1 fill-primary  dark:fill-primaryDark"
                     />
                 </svg>
             </figure>
@@ -68,7 +68,7 @@ const Details = ({
                 <h3 className="capitalize font-bold text-2xl">
                     {posiiton}{' '}
                     <a
-                        className="text-primary capitalize"
+                        className="text-primary capitalize dark:text-primaryDark"
                         href={companyLink}
                         target="_blank"
                     >
@@ -99,7 +99,7 @@ const Experience = () => {
             <div ref={ref} className="w-[75%] mx-auto relative ">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
                 />
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
