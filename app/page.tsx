@@ -11,14 +11,6 @@ import Hire from '@/components/Hire';
 export default function Home() {
     return (
         <>
-            <Head>
-                <title>My next app</title>
-                <meta
-                    name="desription"
-                    content="Front-end developer,FE,Js,ts,React,HTML,CSS,JavaScript,TypeScript"
-                />
-            </Head>
-
             <main className="flex items-center text-dark w-full  h-[calc(100vh-96px)] relative dark:text-light overflow-y-hidden  ">
                 <HomeLayout className="pt-0">
                     <div className="flex items-center justify-between w-full h-full mt-24">
