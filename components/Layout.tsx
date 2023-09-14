@@ -15,7 +15,7 @@ const Layout = ({ children, className = '' }: HomeLayoutProps) => {
         <AnimatePresence mode="wait">
             <TransitionEffect keys={router}>
                 <div
-                    className={`pt-12 w-full   inline-block z-0 relative bg-light dark:bg-dark p-32 ${className}`}
+                    className={`pt-12 w-full   inline-block z-0 relative bg-light dark:bg-dark p-32 xl:p-24 lg:p-16 md:p-10 sm:p-8 ${className}`}
                 >
                     {children}
                 </div>

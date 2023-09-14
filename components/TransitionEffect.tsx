@@ -10,7 +10,7 @@ type TType = {
 };
 const TransitionEffect = ({ children, keys }: TType) => {
     return (
-        <div key={keys}>
+        <div className="h-full" key={keys}>
             <motion.div
                 className="fixed top-0 bottom-0 right-full w-screen h-screen z-50 bg-primary"
                 initial={{ x: '100%', width: '100%' }}
