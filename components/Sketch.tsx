@@ -3,16 +3,15 @@
 // import * as THREE from 'three';
 
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-// import mask from './img/mask4.png';
-// import mask2 from './img/mask6.jpg';
-// import t from './img/t1.png';
+// import mask from '../public/images/three/img/mask4.png';
+// import mask2 from '../public/images/three/img/mask6.jpg';
+// import t from '../public/images/three/img/t1.png';
 // import gsap from 'gsap';
 // import fragmentShader from '@/shaders/fragment2';
 // import vertexShader from '@/shaders/vertex2';
 
 // export default class Sketch {
 //     constructor() {
-//         super();
 //         this.renderer = new THREE.WebGLRenderer({ antialias: true });
 //         this.renderer.setSize(window.innerWidth, window.innerHeight);
 
@@ -23,7 +22,7 @@
 //             75,
 //             window.innerWidth / window.innerHeight,
 //             0.1,
-//             1000,
+//             3000,
 //         );
 //         this.camera.position.z = 1000;
 //         this.scene = new THREE.Scene();
@@ -32,9 +31,7 @@
 //         this.mouse = new THREE.Vector2();
 //         this.point = new THREE.Vector2();
 
-//           }
 //         this.textures = [new THREE.TextureLoader().load(t)];
-
 //         this.masks = [
 //             new THREE.TextureLoader().load(mask),
 //             new THREE.TextureLoader().load(mask2),
@@ -46,7 +43,6 @@
 
 //         this.mouseEffects();
 //         this.render();
-//         this.loadT(t,mask,mask2);
 //     }
 
 //     mouseEffects() {
@@ -81,7 +77,7 @@
 //                 this.raycaster.setFromCamera(this.mouse, this.camera);
 
 //                 const intersects = this.raycaster.intersectObjects([this.test]);
-//                 //console.log(intersects[0] && intersects[0].point);
+//                 // console.log(intersects[0] && intersects[0].point);
 
 //                 if (intersects[0]) {
 //                     this.point.x = intersects[0].point.x;
@@ -139,7 +135,7 @@
 //                 this.positions.setXYZ(index, posX * 2, (j - 256) * 2, 0);
 //                 this.coordinates.setXYZ(index, i, j, 0);
 //                 this.offset.setX(index, rand(-2000, 2000));
-//                 this.speed.setX(index, rand(0.1, 0.6));
+//                 this.speed.setX(index, rand(0.4, 1));
 //                 this.direction.setX(index, Math.random() > 0.5 ? 1 : -1);
 //                 this.press.setX(index, rand(0.4, 1));
 //                 index++;
@@ -161,6 +157,9 @@
 
 //     render() {
 //         this.time++;
+//         // this.mesh.rotation.x += 0.01;
+//         // this.mesh.rotation.y += 0.02;
+//         // console.log(this.time);
 
 //         this.material.uniforms.time.value = this.time;
 //         this.material.uniforms.move.value = this.move;

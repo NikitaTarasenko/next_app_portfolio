@@ -17,6 +17,8 @@ export default function Home() {
                             src={profilePic}
                             alt="programmer"
                             className="w-full h-[calc(100vh-122px)] object-contain z-0  relative "
+                            priority
+                            sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                         />
                     </div>
                     <div className="w-1/2 flex flex-col items-start self-center ">

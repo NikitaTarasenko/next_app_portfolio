@@ -38,7 +38,13 @@ const FeaturedProject = ({
                 target="_blank"
                 className="w-1/2 cursor-pointer overflow-hidden rounded-lg h-[90%]"
             >
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <Image
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto hover:scale-[1.02] transition ease-in-out duration-300"
+                    priority
+                    sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             <div className="w-1/2 flex flex-col items-start justify-between pl-6">
                 <span className="text-xl text-primary  font-medium dark:text-primaryDark">
@@ -101,7 +107,13 @@ const Project = ({
                 target="_blank"
                 className="w-full cursor-pointer overflow-hidden rounded-lg p-6 "
             >
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <Image
+                    src={img}
+                    alt={title}
+                    className="w-full h-auto hover:scale-[1.03] transition ease-in-out duration-300"
+                    priority
+                    sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
             </Link>
             <div className="w-full flex flex-col items-start justify-between mt-4">
                 <span className="text-xl text-primary  dark:text-primaryDark font-medium">
