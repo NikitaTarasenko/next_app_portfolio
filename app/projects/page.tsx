@@ -37,7 +37,7 @@ const FeaturedProject = ({
         >
             <div
                 className="absolute -top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light
-            xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+            xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem] "
             />
             <Link
                 href={link}
@@ -61,7 +61,7 @@ const FeaturedProject = ({
                     target="_blank"
                     className="hover:underline underline-offset-2"
                 >
-                    <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+                    <h2 className="my-2 w-full text-left text-4xl font-bold text-dark dark:text-light sm:text-sm">
                         {title}
                     </h2>
                 </Link>
@@ -106,7 +106,7 @@ const Project = ({
     return (
         <article
             className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark
-         dark:border-light xs:p-4"
+         dark:border-light xs:p-4 text-dark dark:text-light"
         >
             <div
                 className="absolute -top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light 
@@ -135,7 +135,7 @@ const Project = ({
                     target="_blank"
                     className="hover:underline underline-offset-2"
                 >
-                    <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+                    <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl text-dark dark:text-light">
                         {title}
                     </h2>
                 </Link>

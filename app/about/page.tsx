@@ -36,7 +36,9 @@ const about = () => {
             });
         }, [springValue, value]);
 
-        return <span ref={ref}></span>;
+        return (
+            <span className="text-dark/75 dark:text-light/75" ref={ref}></span>
+        );
     };
     return (
         <>
@@ -55,11 +57,11 @@ const about = () => {
                         delay={1.5}
                     />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+                        <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 text-dark/75 dark:text-light/75">
+                            <h2 className="mb-4 text-lg font-bold uppercase ">
                                 Biography
                             </h2>
-                            <p className="font-medium ">
+                            <p className="font-medium text-dark dark:text-light/75">
                                 {`Hi, I'm CodeBucks, a web developer and UI/UX
                                 designer with a passion for creating beautiful,
                                 functional, and user-centered digital
@@ -69,14 +71,14 @@ const about = () => {
                                 life.`}
                             </p>
 
-                            <p className="font-medium my-4">
+                            <p className="font-medium my-4 text-dark dark:text-light/75">
                                 {` I believe that design is about more than just
                                 making things look pretty – it's about solving
                                 problems and creating intuitive, enjoyable
                                 experiences for users.`}
                             </p>
 
-                            <p className="font-medium ">
+                            <p className="font-medium  text-dark/75 dark:text-light/75">
                                 {` Whether I'm working on a website, mobile app, or
                                 other digital product, I bring my commitment to
                                 design excellence and user-centered thinking to
@@ -101,7 +103,7 @@ const about = () => {
                             />
                         </div>
 
-                        <div className="flex col-span-2 flex-col items-end justify-between py-10 pb-56 md:pb-10 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+                        <div className="flex col-span-2 flex-col items-end justify-between py-10 pb-56 md:pb-10 xl:col-span-8 xl:flex-row xl:items-center md:order-3 text-dark/75 dark:text-light/75">
                             <div className="flex flex-col items-end justify-center">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl  md:flex md:w-full md:justify-center">
                                     <AnimatedNumbers value={20} />+
