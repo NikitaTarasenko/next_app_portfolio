@@ -13,7 +13,7 @@ const Details = ({ type, time, place, info }: DetailsProps) => {
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
         target: ref,
-        offset: ['start end', 'center start'],
+        offset: ['start end', 'center center'],
     });
     return (
         <li
@@ -105,7 +105,7 @@ const Education = () => {
                         place=" Main Academy"
                         info="Technologies: 
                         •	HTML5/CSS3, SCSS, LESS;
-                        •	JS, JQuery; 
+                        •	JS, JQuery;     
                         •	React;
                         •	Git;
                         •	Gulp/Webpack;

@@ -77,7 +77,7 @@ const FeaturedProject = ({
                         </Link>
                     )}
                 </p>
-                <div className="mt-2 flex items-center">
+                <div className="mt-2 flex items-center text-dark  dark:text-light">
                     <Link href={githubLink} target="_blank" className="w-10">
                         <GithubIcon />
                     </Link>
@@ -187,6 +187,23 @@ const page = () => {
                                 githubLink="https://github.com/NikitaTarasenko/svc"
                             />
                         </div>
+                        <div className="col-span-12  sm:order-2">
+                            <FeaturedProject
+                                title="Production project clone"
+                                img={pr1}
+                                sumary="It's a simulation of creating a real production project. Complete project configuration from scratch using Webpack. React, Typescript, Babel, scss, css modules, vite, prettier, test environments, jest, rtl, storybook, loki, Cypress are also configured. 
+                                The project was created by following FSD architecture.
+                                The site is optimised on component levels as well as asynchronous redusers. Libraries are loaded asynchronously only when they are required in the code. Lazy loading.
+                                Almost all components are covered by tests (jest, rtl, storybook, loki, Cypress).
+                                Role-based authorisation. Private Routes.
+                                Internalisation available( 2 languages). 3 colour themes.
+                                Server requests are generated both with axios instances and RTK QUERY.
+                                The site is fully adapted for all devices."
+                                link="https://nt-product-project-8fd0f8.netlify.app/"
+                                type="Featured Project"
+                                githubLink="https://github.com/NikitaTarasenko/production-project/blob/main/README.md"
+                            />
+                        </div>
                         <div className="col-span-6 sm:col-span-12  sm:order-3">
                             <Project
                                 title="Startup.Inc"
@@ -203,24 +220,6 @@ const page = () => {
                                 link="https://nikitatarasenko.github.io/kievstar/index.html"
                                 type="Freelance Project"
                                 githubLink="https://github.com/NikitaTarasenko/NikitaTarasenko.github.io/tree/master/kievstar"
-                            />
-                        </div>
-
-                        <div className="col-span-12  sm:order-2">
-                            <FeaturedProject
-                                title="Production project clone"
-                                img={pr1}
-                                sumary="It's a simulation of creating a real production project. Complete project configuration from scratch using Webpack. React, Typescript, Babel, scss, css modules, vite, prettier, test environments, jest, rtl, storybook, loki, Cypress are also configured. 
-                                The project was created by following FSD architecture.
-                                The site is optimised on component levels as well as asynchronous redusers. Libraries are loaded asynchronously only when they are required in the code. Lazy loading.
-                                Almost all components are covered by tests (jest, rtl, storybook, loki, Cypress).
-                                Role-based authorisation. Private Routes.
-                                Internalisation available( 2 languages). 3 colour themes.
-                                Server requests are generated both with axios instances and RTK QUERY.
-                                The site is fully adapted for all devices."
-                                link="https://nt-product-project-8fd0f8.netlify.app/"
-                                type="Featured Project"
-                                githubLink="https://github.com/NikitaTarasenko/production-project/blob/main/README.md"
                             />
                         </div>
 
