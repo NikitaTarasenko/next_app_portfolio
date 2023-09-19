@@ -62,18 +62,18 @@ const about = () => {
                                 Biography
                             </h2>
                             <p className="font-medium text-dark dark:text-light/75">
-                                {`Hi, I'm CodeBucks, a web developer and UI/UX
-                                designer with a passion for creating beautiful,
+                                {`Hi, I'm Nikita, a front-end developer  
+                                  with a passion for creating beautiful,
                                 functional, and user-centered digital
-                                experiences. With 4 years of experience in the
+                                experiences. With 5 years of experience in the
                                 field. I am always looking for new and
                                 innovative ways to bring my clients' visions to
                                 life.`}
                             </p>
 
                             <p className="font-medium my-4 text-dark dark:text-light/75">
-                                {` I believe that design is about more than just
-                                making things look pretty – it's about solving
+                                {` I believe that coding is about more than just
+                                making things functional and look pretty – it's about solving
                                 problems and creating intuitive, enjoyable
                                 experiences for users.`}
                             </p>
