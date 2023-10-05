@@ -1,27 +1,34 @@
 'use client';
-import Head from 'next/head';
 import HomeLayout from '@/components/HomeLayout';
-import Image from 'next/image';
-import profilePic from '../public/images/Home/developer-pic-1.png';
 import Animatedtext from '@/components/Animatedtext';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
 import Hire from '@/components/Hire';
+import dynamic from 'next/dynamic';
+import VoxelDogLoader from '../components/voxel-dog-loader.js';
+
+const LazyVoxelDog = dynamic(() => import('../components/voxel-dog.js'), {
+    ssr: false,
+    loading: () => <VoxelDogLoader />,
+});
 
 export default function Home() {
     return (
         <>
-            <main className="flex items-center text-dark w-full  h-[calc(100vh-96px)] lg:min-h-screen relative dark:text-light overflow-y-hidden  md:h-full">
-                <HomeLayout className="pt-0 md:p-16 sm:pt-8  lg:h-full">
+            <main className="flex items-center text-dark w-full  h-full lg:min-h-screen relative dark:text-light overflow-y-hidden  md:h-full">
+                <HomeLayout className="pt-0 md:p-20 sm:pt-0  lg:h-full">
                     <div className="flex items-center justify-between w-full   mt-24 lg:flex-col  lg:mt-6 lg:justify-start">
-                        <div className="w-1/2  relative md:w-full">
-                            <Image
+                        <div className="w-1/2 lg:w-full relative md:w-full  ">
+                            {/* <Image
                                 src={profilePic}
                                 alt="programmer"
                                 className="w-full h-[calc(100vh-122px)] lg:h-full  object-contain z-0  relative lg:hidden md:inline-block md:w-full md:h-[80vh]"
                                 priority
                                 sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-                            />
+                            /> */}
+                            <div className="tree">
+                                <LazyVoxelDog />
+                            </div>
                         </div>
                         <div className="w-1/2 flex flex-col items-start self-center lg:text-center md:w-full">
                             <Animatedtext

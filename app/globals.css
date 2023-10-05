@@ -34,3 +34,91 @@ canvas {
   width: 100% !important;
   height: 100% !important;
 }
+
+.tree {
+  margin: 0 auto;
+  height: 900px;
+  width: 800px;
+  cursor: pointer;
+}
+
+.voxel-dog {
+  width: 100%;
+  height: 100%;
+}
+
+.spiner {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+
+}
+
+
+@media(min-width: 3000px) {
+  .skills {
+    margin-bottom: 150px;
+  }
+}
+
+@media(max-height: 1280px) {
+  .tree {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media(max-height: 1050px) {
+  .tree {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@media(max-height: 950px) {
+  .tree {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media(max-width:1080px) {
+  .spiner {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 2%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media(max-width:1180px) and (min-height: 950px) {
+  .tree {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media(max-width:639px) {
+  .tree {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media(max-width:539px) {
+  .tree {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media(max-width:439px) {
+  .tree {
+    width: 100%;
+    height: 350px;
+  }
+}
