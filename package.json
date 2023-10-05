@@ -10,6 +10,7 @@
     "export": "next build && next export -o _static"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.1",
     "@react-three/drei": "^9.83.9",
     "@react-three/fiber": "^8.14.1",
     "@types/node": "20.5.9",
