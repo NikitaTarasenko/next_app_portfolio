@@ -57,6 +57,21 @@ const about = () => {
                         delay={1.5}
                     />
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+                        <div
+                            className="col-span-3 relative  h-max rounded-2xl border-2 border-solid border-dark
+                        bg-light p-8  dark:bg-dark  dark:border-light  xl:col-span-4 md:order-1 md:col-span-8"
+                        >
+                            <div className="absolute -top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
+
+                            <Image
+                                src={Me}
+                                alt="me"
+                                className="w-full h-auto rounded-2xl  "
+                                priority
+                                sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                        </div>
+
                         <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8 text-dark/75 dark:text-light/75">
                             <h2 className="mb-4 text-lg font-bold uppercase ">
                                 Biography
@@ -86,21 +101,6 @@ const about = () => {
                                 opportunity to bring my skills and passion to
                                 your next project.`}
                             </p>
-                        </div>
-
-                        <div
-                            className="col-span-3 relative  h-max rounded-2xl border-2 border-solid border-dark
-                        bg-light p-8  dark:bg-dark  dark:border-light  xl:col-span-4 md:order-1 md:col-span-8"
-                        >
-                            <div className="absolute -top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark dark:bg-light" />
-
-                            <Image
-                                src={Me}
-                                alt="me"
-                                className="w-full h-auto rounded-2xl  "
-                                priority
-                                sizes="(max-width:768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            />
                         </div>
 
                         <div className="flex col-span-2 flex-col items-end justify-between py-10 pb-56 md:pb-10 xl:col-span-8 xl:flex-row xl:items-center md:order-3 text-dark/75 dark:text-light/75">
